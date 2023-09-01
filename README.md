@@ -1,6 +1,8 @@
-# UI/UX redesign for 
+# UI/UX redesign for Higher Diploma(HD) page
 
-The redesign of the HD (Higher Diploma) page is driven by four key aspects to enhance the user experience, ensure mobile responsiveness, streamline the application process, and provide clear information and requirements.
+## link: https://ui-ux-for-hd.web.app/#/higher_diploma
+
+The redesign of the HD page is driven by four key aspects to enhance the user experience, ensure mobile responsiveness, streamline the application process, and provide clear information and requirements.
 
 Firstly, the focus lies on enhancing the overall user experience, aiming to create an intuitive and user-friendly interface. The redesigned HD page will offer a seamless navigation experience, enabling applicants to effortlessly locate relevant information and complete their applications efficiently. Emphasis is placed on simplifying the application process and providing clear instructions and guidance at each step.
 
