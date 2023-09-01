@@ -37,14 +37,10 @@ class CourseSection extends StatelessWidget {
         ),
         const SizedBox(height: 50),
         GridView.builder(
+          physics: const NeverScrollableScrollPhysics(),
           shrinkWrap: true,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               childAspectRatio: width / width * 0.8,
-              // childAspectRatio: screenSize == Responsive.large
-              //     ? width / width * 0.8
-              //     : screenSize == Responsive.medium
-              //         ? 1 / 1
-              //         : 1 / 1.3,
               crossAxisCount: screenSize == Responsive.large
                   ? 4
                   : screenSize == Responsive.medium

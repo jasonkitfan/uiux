@@ -91,6 +91,7 @@ class CourseCard extends StatelessWidget {
                       Expanded(
                           flex: 7,
                           child: ListView.builder(
+                              physics: const NeverScrollableScrollPhysics(),
                               shrinkWrap: true,
                               itemCount: higherDiplomaData[category][index]
                                       ["campus"]

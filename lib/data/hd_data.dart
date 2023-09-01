@@ -41,6 +41,7 @@ final Map<String, dynamic> higherDiplomaData = {
       "code": "AS114101",
       "title": "Higher Diploma in Environmental Science",
       "campus": ["IVE (Sha Tin)"],
+      "elective": {"N/A": []},
       "content": [
         [
           "Nature Field Camp",
@@ -96,6 +97,7 @@ final Map<String, dynamic> higherDiplomaData = {
       "code": "AS114103",
       "title": "Higher Diploma in Analytical Science",
       "campus": ["IVE (Sha Tin)", "IVE (Chai Wan)"],
+      "elective": {"N/A": []},
       "content": [
         [
           "Essential Chemistry and Applications",
@@ -123,6 +125,7 @@ final Map<String, dynamic> higherDiplomaData = {
       "code": "AS114104",
       "title": "Higher Diploma in Biotechnology",
       "campus": ["IVE (Sha Tin)"],
+      "elective": {"N/A": []},
       "content": [
         [
           "Fundamental Chemistry for Biotechnology Study",
@@ -151,49 +154,81 @@ final Map<String, dynamic> higherDiplomaData = {
       "image": "assets/images/real_estate_management.png",
       "code": "BA114037",
       "title": "Higher Diploma in Real Estate and Property Management",
-      "campus": ["IVE (Sha Tin)"]
+      "campus": ["IVE (Sha Tin)"],
+      "content": [
+        [""]
+      ],
+      "elective": {"N/A": []},
     },
     {
       "image": "assets/images/advertising_media_communication.png",
       "code": "BA114040",
       "title": "Higher Diploma in Advertising and Media Communications",
-      "campus": ["IVE (Tsing Yi)"]
+      "campus": ["IVE (Tsing Yi)"],
+      "content": [
+        [""]
+      ],
+      "elective": {"N/A": []},
     },
     {
       "image": "assets/images/human_resource.png",
       "code": "BA114044",
       "title": "Higher Diploma in Human Resources and Talent Analytics",
-      "campus": ["IVE (Kwun Tong)", "IVE (Tsing Yi)"]
+      "campus": ["IVE (Kwun Tong)", "IVE (Tsing Yi)"],
+      "content": [
+        [""]
+      ],
+      "elective": {"N/A": []},
     },
     {
       "image": "assets/images/marketing.png",
       "code": "BA114045",
       "title": "Higher Diploma in Marketing and Customer Analytics",
-      "campus": ["IVE (Sha Tin)", "IVE (Tuen Mun)"]
+      "campus": ["IVE (Sha Tin)", "IVE (Tuen Mun)"],
+      "content": [
+        [""]
+      ],
+      "elective": {"N/A": []},
     },
     {
       "image": "assets/images/retail.png",
       "code": "BA114046",
       "title": "Higher Diploma in Retail Innovation and Management",
-      "campus": ["IVE (Haking Wong)"]
+      "campus": ["IVE (Haking Wong)"],
+      "content": [
+        [""]
+      ],
+      "elective": {"N/A": []},
     },
     {
       "image": "assets/images/banking.png",
       "code": "BA114048",
       "title": "Higher Diploma in Banking and Financial Analysis",
-      "campus": ["IVE (Haking Wong)", "IVE (Sha Tin)"]
+      "campus": ["IVE (Haking Wong)", "IVE (Sha Tin)"],
+      "content": [
+        [""]
+      ],
+      "elective": {"N/A": []},
     },
     {
       "image": "assets/images/global_business.png",
       "code": "BA114049",
       "title": "Higher Diploma in Global Business Management with Languages",
-      "campus": ["IVE (Haking Wong)"]
+      "campus": ["IVE (Haking Wong)"],
+      "content": [
+        [""]
+      ],
+      "elective": {"N/A": []},
     },
     {
       "image": "assets/images/business_legal.png",
       "code": "BA114050",
       "title": "Higher Diploma in Business and Legal Studies",
-      "campus": ["IVE (Sha Tin)"]
+      "campus": ["IVE (Sha Tin)"],
+      "content": [
+        [""]
+      ],
+      "elective": {"N/A": []},
     },
   ]
 };

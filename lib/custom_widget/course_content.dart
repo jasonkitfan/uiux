@@ -17,7 +17,8 @@ class _CourseContentState extends State<CourseContent> {
   Widget build(BuildContext context) {
     var course = Provider.of<CourseDetailProvider>(context);
 
-    if (course.courseContent!.isEmpty) {
+    // no content found in the data
+    if (course.courseContent!.first.first == "") {
       return const SizedBox();
     }
 
@@ -42,7 +43,7 @@ class _CourseContentState extends State<CourseContent> {
           ...List.generate(course.courseContent!.length,
               (index) => ContentExpand(semester: index)),
           const SizedBox(height: 40),
-          if (course.courseElective!.isNotEmpty)
+          if (course.courseElective!.keys.elementAt(0) != "N/A")
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
