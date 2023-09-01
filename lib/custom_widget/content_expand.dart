@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:uiux/data_manager/provider.dart';
+
+import '../data_manager/provider.dart';
 
 class ContentExpand extends StatefulWidget {
   const ContentExpand({Key? key, required this.semester}) : super(key: key);

@@ -69,29 +69,33 @@ class CourseEntranceRequirement extends StatelessWidget {
                       remark.keys.elementAt(index),
                       style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
-                    subtitle: ListView.separated(
-                        shrinkWrap: true,
-                        physics: const NeverScrollableScrollPhysics(),
-                        itemCount: remark[remark.keys.elementAt(index)]!.length,
-                        separatorBuilder: (cc, ii) => const Divider(),
-                        itemBuilder: (c, i) => remark[
-                                    remark.keys.elementAt(index)]![i]
-                                .contains("=>")
-                            ? Row(
-                                children: [
-                                  Expanded(
-                                      child: Text(remark[
-                                              remark.keys.elementAt(index)]![i]
-                                          .split("=>")[0])),
-                                  const Expanded(
-                                      child: Center(child: Text("=>"))),
-                                  Expanded(
-                                      child: Text(remark[
-                                              remark.keys.elementAt(index)]![i]
-                                          .split("=>")[1]))
-                                ],
-                              )
-                            : Text(remark[remark.keys.elementAt(index)]![i])),
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 20),
+                      child: ListView.separated(
+                          shrinkWrap: true,
+                          physics: const NeverScrollableScrollPhysics(),
+                          itemCount:
+                              remark[remark.keys.elementAt(index)]!.length,
+                          separatorBuilder: (cc, ii) => const Divider(),
+                          itemBuilder: (c, i) => remark[
+                                      remark.keys.elementAt(index)]![i]
+                                  .contains("=>")
+                              ? Row(
+                                  children: [
+                                    Expanded(
+                                        child: Text(remark[remark.keys
+                                                .elementAt(index)]![i]
+                                            .split("=>")[0])),
+                                    const Expanded(
+                                        child: Center(child: Text("=>"))),
+                                    Expanded(
+                                        child: Text(remark[remark.keys
+                                                .elementAt(index)]![i]
+                                            .split("=>")[1]))
+                                  ],
+                                )
+                              : Text(remark[remark.keys.elementAt(index)]![i])),
+                    ),
                   ))
         ],
       ),

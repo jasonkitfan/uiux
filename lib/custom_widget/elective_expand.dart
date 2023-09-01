@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:uiux/data_manager/provider.dart';
 
 class ElectiveExpand extends StatefulWidget {
   const ElectiveExpand({Key? key, required this.title, required this.elective})
@@ -18,8 +16,6 @@ class _ElectiveExpandState extends State<ElectiveExpand> {
 
   @override
   Widget build(BuildContext context) {
-    var course = Provider.of<CourseDetailProvider>(context);
-
     return Column(
       children: [
         GestureDetector(
@@ -79,6 +75,5 @@ class _ElectiveExpandState extends State<ElectiveExpand> {
         )
       ],
     );
-    ;
   }
 }

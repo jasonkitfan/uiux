@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:uiux/global_function/func.dart';
 
 import '../data_manager/provider.dart';
+import '../global_function/func.dart';
 import '../page/application_page.dart';
 
 class CourseBasicInfo extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:uiux/global_function/func.dart';
-import 'package:uiux/page/hd_page.dart';
 
+import '../global_function/func.dart';
+import '../page/hd_page.dart';
 import 'my_search_bar.dart';
 
 class MyAppBar extends StatelessWidget {

@@ -1,14 +1,14 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:uiux/custom_widget/course_content.dart';
-import 'package:uiux/custom_widget/my_app_bar.dart';
-import 'package:uiux/global_function/func.dart';
 
 import '../custom_widget/course_basic_info.dart';
 import '../custom_widget/course_category.dart';
+import '../custom_widget/course_content.dart';
 import '../custom_widget/course_entrance_requirement.dart';
+import '../custom_widget/my_app_bar.dart';
 import '../data_manager/provider.dart';
+import '../global_function/func.dart';
 
 class HDDetailPage extends StatefulWidget {
   const HDDetailPage({Key? key}) : super(key: key);
@@ -48,6 +48,9 @@ class _HDDetailPageState extends State<HDDetailPage> {
     if (course.courseImage == null) {
       return Scaffold(
         appBar: AppBar(
+          toolbarHeight: 80,
+          backgroundColor: const Color(0xff7874ff),
+          automaticallyImplyLeading: false,
           title: MyAppBar(
             scaffoldKey: scaffoldKey,
           ),
@@ -63,6 +66,8 @@ class _HDDetailPageState extends State<HDDetailPage> {
       key: scaffoldKey,
       drawer: SizedBox(width: width * 2 / 3, child: const CourseCategory()),
       appBar: AppBar(
+        toolbarHeight: 80,
+        backgroundColor: const Color(0xff7874ff),
         automaticallyImplyLeading: false,
         title: MyAppBar(
           scaffoldKey: scaffoldKey,

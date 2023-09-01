@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:uiux/data_manager/shared_preferences.dart';
 
 import '../data/hd_data.dart';
+import 'shared_preferences.dart';
 
 class CourseDetailProvider extends ChangeNotifier {
   String? courseTitle;

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:uiux/data/hd_data.dart';
-import 'package:uiux/page/hd_detail_page.dart';
 
+import '../data/hd_data.dart';
 import '../data_manager/provider.dart';
+import '../global_function/func.dart';
+import '../page/hd_detail_page.dart';
 
 class CourseCard extends StatelessWidget {
   const CourseCard({Key? key, required this.category, required this.index})
@@ -14,6 +15,9 @@ class CourseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = getWidth(context);
+    Responsive screenSize = responsive(width);
+
     return GestureDetector(
       onTap: () {
         Provider.of<CourseDetailProvider>(context, listen: false).setCourse(
@@ -47,7 +51,7 @@ class CourseCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Expanded(
-                          flex: 2,
+                          flex: 3,
                           child: Text(
                             "Title",
                             style: TextStyle(fontWeight: FontWeight.bold),
@@ -58,12 +62,12 @@ class CourseCard extends StatelessWidget {
                               Text(higherDiplomaData[category][index]["title"]))
                     ],
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(height: screenSize == Responsive.large ? 20 : 10),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Expanded(
-                          flex: 2,
+                          flex: 3,
                           child: Text(
                             "Code",
                             style: TextStyle(fontWeight: FontWeight.bold),
@@ -74,12 +78,12 @@ class CourseCard extends StatelessWidget {
                               Text(higherDiplomaData[category][index]["code"]))
                     ],
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(height: screenSize == Responsive.large ? 20 : 10),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Expanded(
-                          flex: 2,
+                          flex: 3,
                           child: Text(
                             "Campus",
                             style: TextStyle(fontWeight: FontWeight.bold),

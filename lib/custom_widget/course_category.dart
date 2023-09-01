@@ -94,12 +94,11 @@ class _CategoryButtonState extends State<CategoryButton> {
       onExit: (_) {
         setState(() {
           backgroundColor = Theme.of(context).scaffoldBackgroundColor;
-          ;
         });
       },
       child: GestureDetector(
         onTap: () {
-          print("${widget.categoryIndex} is pressed");
+          // print("${widget.categoryIndex} is pressed");
         },
         child: Container(
           padding: const EdgeInsets.all(10),

@@ -1,10 +1,11 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:uiux/custom_widget/course_category.dart';
-import 'package:uiux/custom_widget/course_section.dart';
-import 'package:uiux/custom_widget/hd_banner.dart';
-import 'package:uiux/custom_widget/my_app_bar.dart';
-import 'package:uiux/global_function/func.dart';
+
+import '../custom_widget/course_category.dart';
+import '../custom_widget/course_section.dart';
+import '../custom_widget/hd_banner.dart';
+import '../custom_widget/my_app_bar.dart';
+import '../global_function/func.dart';
 
 class HDPage extends StatefulWidget {
   const HDPage({Key? key}) : super(key: key);
@@ -34,6 +35,8 @@ class _HDPageState extends State<HDPage> {
     return Scaffold(
         key: scaffoldKey,
         appBar: AppBar(
+          toolbarHeight: 80,
+          backgroundColor: const Color(0xff7874ff),
           automaticallyImplyLeading: false,
           title: MyAppBar(
             scaffoldKey: scaffoldKey,

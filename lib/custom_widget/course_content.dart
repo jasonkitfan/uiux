@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:uiux/custom_widget/elective_expand.dart';
-import 'package:uiux/data_manager/provider.dart';
 
+import '../data_manager/provider.dart';
 import 'content_expand.dart';
+import 'elective_expand.dart';
 
 class CourseContent extends StatefulWidget {
   const CourseContent({Key? key}) : super(key: key);

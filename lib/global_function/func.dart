@@ -1,12 +1,14 @@
-import 'package:flutter/material.dart';
+// ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
+
+import 'package:flutter/material.dart';
 
 double getWidth(BuildContext context) {
   return MediaQuery.of(context).size.width;
 }
 
 /// screen width checking
-const double largeScreen = 1250;
+const double largeScreen = 1200;
 const double mediumScreen = 700;
 
 enum Responsive { large, medium, small }

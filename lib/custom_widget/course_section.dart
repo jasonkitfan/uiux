@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:uiux/custom_widget/course_card.dart';
-import 'package:uiux/data/hd_data.dart';
-import 'package:uiux/global_function/func.dart';
+
+import '../data/hd_data.dart';
+import '../global_function/func.dart';
+import 'course_card.dart';
 
 class CourseSection extends StatelessWidget {
   const CourseSection({Key? key, required this.category}) : super(key: key);
@@ -10,29 +11,45 @@ class CourseSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Responsive screenSize = responsive(getWidth(context));
+    double width = getWidth(context);
+    Responsive screenSize = responsive(width);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          category,
-          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 50),
+        Container(
+          decoration: BoxDecoration(
+              color: const Color(0xff7874ff).withOpacity(0.5),
+              borderRadius: const BorderRadius.only(
+                  topRight: Radius.circular(100),
+                  bottomRight: Radius.circular(100))),
+          padding: const EdgeInsets.all(20),
+          child: Text(
+            category,
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: screenSize == Responsive.large
+                    ? 50
+                    : screenSize == Responsive.medium
+                        ? 40
+                        : 30),
+          ),
         ),
         const SizedBox(height: 50),
         GridView.builder(
           shrinkWrap: true,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              childAspectRatio: screenSize == Responsive.large
-                  ? 1 / 1.1
-                  : screenSize == Responsive.medium
-                      ? 1 / 1.05
-                      : 1 / 0.9,
+              childAspectRatio: width / width * 0.8,
+              // childAspectRatio: screenSize == Responsive.large
+              //     ? width / width * 0.8
+              //     : screenSize == Responsive.medium
+              //         ? 1 / 1
+              //         : 1 / 1.3,
               crossAxisCount: screenSize == Responsive.large
-                  ? 3
+                  ? 4
                   : screenSize == Responsive.medium
-                      ? 2
-                      : 1),
+                      ? 3
+                      : 2),
           itemCount: higherDiplomaData[category].length,
           itemBuilder: (BuildContext context, int index) =>
               CourseCard(category: category, index: index),

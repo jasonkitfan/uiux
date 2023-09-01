@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:uiux/data_manager/provider.dart';
-import 'package:uiux/global_function/func.dart';
-import 'package:uiux/page/search_result_page.dart';
+
+import '../data_manager/provider.dart';
+import '../global_function/func.dart';
+import '../page/search_result_page.dart';
 
 class MySearchBar extends StatefulWidget {
   const MySearchBar({Key? key}) : super(key: key);
