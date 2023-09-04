@@ -34,6 +34,7 @@ class CourseCategory extends StatelessWidget {
           const Divider(thickness: 2),
           ListView.builder(
               shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
               itemCount: category.length,
               itemBuilder: (context, index) => CategoryButton(
                     category: category[index],
@@ -50,6 +51,7 @@ class CourseCategory extends StatelessWidget {
           const Divider(thickness: 2),
           ListView.builder(
               shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
               itemCount: s6Category.length,
               itemBuilder: (context, index) => CategoryButton(
                     category: s6Category[index],
